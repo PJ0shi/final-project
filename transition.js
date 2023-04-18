@@ -73,7 +73,7 @@ slides2[currentSlide2].classList.add('active-slide');
 prevButton2.addEventListener('click', () => {
   if (currentSlide2 > 0) {
     currentSlide2--;
-    sliderInner2.style.transform = 'translateX(-' + (currentSlide2 * 5) + '%)';
+    sliderInner2.style.transform = 'translateX(-' + (currentSlide2 * 8) + '%)';
     console.log(sliderInner2.style.transform)
     slides2[currentSlide2 + 1].classList.remove('active-slide');
     slides2[currentSlide2].classList.add('active-slide');
@@ -83,7 +83,7 @@ prevButton2.addEventListener('click', () => {
 nextButton2.addEventListener('click', () => {
   if (currentSlide2 < slides2.length - 1) {
     currentSlide2++;
-    sliderInner2.style.transform = `translateX(-${currentSlide2 * 5}%)`;
+    sliderInner2.style.transform = `translateX(-${currentSlide2 * 8}%)`;
     console.log(sliderInner2.style.transform)
     slides2[currentSlide2 - 1].classList.remove('active-slide');
     slides2[currentSlide2].classList.add('active-slide');

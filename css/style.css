@@ -19,7 +19,7 @@ a.skip:focus {
 
 /*navigation*/
 nav a.current {
-  background-color: purple;
+  background-color: #962C5A;
   padding: 10px;
   color: aliceblue;
 }
@@ -320,19 +320,19 @@ p.title-subheading {
   background-color: #348797;
 }
 
-#card-circle-2 {
+#card-circle-2, #card-circle-2-sect15 {
   background-color: #005B52;
 }
 
-#card-circle-3 {
+#card-circle-3, #card-circle-3-sect15 {
   background-color: #962C5A;
 }
 
-#card-circle-4 {
+#card-circle-4, #card-circle-1-sect15, #card-circle-4-sect15 {
   background-color: #FFAD00;
 }
 
-#card-circle-5 {
+#card-circle-5, #card-circle-5-sect15 {
   background-color: #556ABF;
 }
 
@@ -352,12 +352,18 @@ p.title-subheading {
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-right: 4%;
 }
 
 div.circle p {
   align-self: center;
   font-family: "Verona-Regular Regular";
   font-size: 4rem;
+  color: #FFDAE1;
+}
+
+div.circle p.no-4, div.circle p.no-7 {
+  color: #000;
 }
 
 .headline-large {
@@ -538,15 +544,20 @@ h3 {
 }
 
 #fail-3 {
-  background-color: #348797;
+  background-color: #FFAD00;
 }
 
 #fail-4 {
   background-color: #556ABF;
 }
 
-#fail-1 p, #fail-2 p, #fail-3 p, #fail-4 p {
+#fail-1 p, #fail-2 p, #fail-4 p {
   align-self: center;
+}
+
+#fail-3 p {
+  align-self: center;
+  color: #000;
 }
 
 .title-medium {
@@ -629,6 +640,8 @@ h3 {
 .image-section .title-large {
   text-transform: capitalize;
   color: white;
+  font-size: 1.5rem;
+  align-self: center;
 }
 
 .list-section {
@@ -638,6 +651,11 @@ h3 {
 
 .item-row {
   display: flex;
+  margin-bottom: 4%;
+}
+
+#card-circle-4-sect15 p, #card-circle-1-sect15 p {
+  color: #000;
 }
 
 /*footer*/
@@ -711,7 +729,7 @@ a {
 .slide {
   position: relative;
   flex: 1;
-  height: 100%;
+  width: 100%;
   background-color: black;
   background-position: center;
   background-size: contain;
@@ -785,13 +803,11 @@ a {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  top: 30vh;
+  top: 40vh;
+  margin-top: 4%;
 }
 
 .slider-inner-2 {
-  position: absolute;
-  top: 20vh;
-  left: 0;
   width: 270%;
   height: 100%;
   padding-left: 6%;
@@ -870,16 +886,16 @@ a {
 
 /*Section 4*/
 .creations-section-4 {
-  height: 80vh;
+  height: 40vh;
   padding-left: 6%;
   padding-right: 6%;
   position: relative;
+  margin-top: 20%;
 }
 
 .pickup-card-container {
-  position: relative;
+  /*position: relative;*/
   width: 100%;
-  height: 50vh;
   overflow: hidden;
   top: 30vh;
   display: flex;
@@ -891,7 +907,7 @@ a {
   position: absolute;
   align-self: center;
   top: 30vh;
-  left: 20vw;
+  left: 24vw;
   width: 50%;
   display: flex;
   transition: transform 0.6s ease-in-out;
@@ -902,6 +918,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 4%;
 }
 
 .button-icon {
@@ -916,4 +933,8 @@ a {
 .active {
   display: block;
   z-index: 3;
+}
+
+.creations-section-1 h1, #flavors, .slider-2 h1, .creations-section-4 h1 {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
